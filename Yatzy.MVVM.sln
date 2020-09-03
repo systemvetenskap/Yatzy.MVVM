@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy.MVVM", "Yatzy.MVVM\Yatzy.MVVM.csproj", "{184639B0-3FA2-4895-BD71-6448C542E559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{184639B0-3FA2-4895-BD71-6448C542E559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184639B0-3FA2-4895-BD71-6448C542E559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184639B0-3FA2-4895-BD71-6448C542E559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184639B0-3FA2-4895-BD71-6448C542E559}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC9D7AF4-5E69-4313-A1CA-61A39B20C6F9}
+	EndGlobalSection
+EndGlobal
