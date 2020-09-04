@@ -12,10 +12,11 @@
                 <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 200 200" ImageSource="/Assets/Images/bg.png" />
             </Grid.Background>
             <StackPanel>
-            <Frame x:Name="Main">
+            <Frame x:Name="Main" NavigationUIVisibility="Hidden">
                 
             </Frame>
             <TextBlock Text="{Binding Name, FallbackValue=Erik}"  />
+                <Button x:Name="OpenDragDrop" Content="Visa Sida Drag and Drop" Click="OpenDragDrop_Click"/>
             </StackPanel>
         </Grid>
     </Border>

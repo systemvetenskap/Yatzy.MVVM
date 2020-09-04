@@ -1,0 +1,60 @@
+﻿<Page x:Class="Yatzy.MVVM.DragDropPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Yatzy.MVVM"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DragDropPage"
+      AllowDrop="True">
+    <Page.Resources>
+        <local:BrushColorConverter x:Key="ColorConverter" />
+    </Page.Resources>
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <!-- Ruta för att visa vår spelbräda-->
+        <Border 
+                Background="White"
+                Width="650"
+                MinHeight="200"
+                CornerRadius="10"
+                Margin="50 50 50 0" >
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0"
+            Background="Beige"
+            AllowDrop="True"
+            DragOver="panel_DragOver"
+            Drop="panel_Drop">
+                    <TextBox Width="Auto" Margin="2"
+             Text="green"/>
+                    <local:Circle Margin="2" />
+                    <local:Circle Margin="2" />
+                    <local:YellowPeg Margin="2" />
+                    <local:YellowPeg Margin="2" />
+                    <Ellipse 
+                        Width="100"
+                        Height="100"
+                        Fill="{Binding  Converter={StaticResource ColorConverter}}"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1"
+            Background="Bisque"
+            AllowDrop="True"
+            DragOver="panel_DragOver"
+            Drop="panel_Drop">
+
+                </StackPanel>
+
+
+
+            </Grid>
+        </Border>
+ 
+
+   
+    </StackPanel>
+</Page>

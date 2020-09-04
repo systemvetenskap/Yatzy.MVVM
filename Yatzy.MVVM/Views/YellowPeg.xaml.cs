@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,22 +14,27 @@ using System.Windows.Shapes;
 namespace Yatzy.MVVM
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for YellowPeg.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class YellowPeg : MasterPeg
     {
-        public MainWindow()
+
+        public YellowPeg()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
-            var page = new ScorecardPage();
-            Main.Content = page;
+            CreatePeg();
         }
 
-        private void OpenDragDrop_Click(object sender, RoutedEventArgs e)
+        private void CreatePeg()
         {
-            var page = new DragDropPage();
-            Main.Content = page;
+            Ellipse ellipse = new Ellipse
+            {
+                Fill = Brushes.Yellow,
+                Stroke = Brushes.Black,
+                StrokeThickness = 2
+            };
+            ColorIndex = 2;
+            master.Children.Add(ellipse);
         }
     }
 }
