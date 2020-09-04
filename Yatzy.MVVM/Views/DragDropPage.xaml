@@ -39,7 +39,7 @@
                     <Ellipse 
                         Width="100"
                         Height="100"
-                        Fill="{Binding  Converter={StaticResource ColorConverter}}"/>
+                        Fill="{Binding IsCorrect, Converter={StaticResource ColorConverter}}"/>
                 </StackPanel>
                 <StackPanel Grid.Column="1"
             Background="Bisque"
