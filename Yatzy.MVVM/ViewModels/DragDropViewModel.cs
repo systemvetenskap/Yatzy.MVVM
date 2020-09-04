@@ -23,10 +23,8 @@ namespace Yatzy.MVVM
 
         private void ploj ()
         {
-
-            //MyProperty.Remove(3);
             PegPosition peg;
-            peg = new PegPosition();
+            peg = PegPosition.CorrectColorAndPosition;
             
             switch (peg)
             {
