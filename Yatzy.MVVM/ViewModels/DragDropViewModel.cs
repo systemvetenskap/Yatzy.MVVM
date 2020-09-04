@@ -14,7 +14,7 @@ namespace Yatzy.MVVM
         /// 2 färgen
         /// </summary>
         public Dictionary<int, int> PlacedPegs { get; set; } = new Dictionary<int, int>();
-
+        public PegPosition Peg { get; set; } = PegPosition.NewValue;
         public ObservableCollection<int> MyProperty { get; set; }
 
         

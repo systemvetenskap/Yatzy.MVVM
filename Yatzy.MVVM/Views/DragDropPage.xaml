@@ -10,6 +10,7 @@
       AllowDrop="True">
     <Page.Resources>
         <local:BrushColorConverter x:Key="ColorConverter" />
+        <local:BrushColorConverter2 x:Key="PegColorConverter" />
     </Page.Resources>
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
         <!-- Ruta för att visa vår spelbräda-->
@@ -39,7 +40,9 @@
                     <Ellipse 
                         Width="100"
                         Height="100"
-                        Fill="{Binding IsCorrect, Converter={StaticResource ColorConverter}}"/>
+                        Fill="{Binding Peg, Converter={StaticResource PegColorConverter}}" />
+                    <!--="{Binding IsCorrect, Converter={StaticResource ColorConverter}}"/> -->
+                       
                 </StackPanel>
                 <StackPanel Grid.Column="1"
             Background="Bisque"
