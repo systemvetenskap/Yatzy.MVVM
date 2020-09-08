@@ -32,7 +32,10 @@ namespace Yatzy.MVVM
             RollDiceCommand = new RelayCommand(RollDice);
         }
 
-
+        public ScoreCardViewModel(IGameEngine gameEngine)
+        {
+                // Smart kod
+        }
         public void RollDice()
         {
             ButtonName = "Tärningen är kastad";
